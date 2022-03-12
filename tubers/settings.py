@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-nr)um#!kmek0s7ye@gv8pio7%bytv^a316p)r&d^2#_@@tpk4-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['youtubers-social-platform.herokuapp.com','127.0.0.1:8000']
 
 LOGIN_REDIRECT_URL='dashboard'
 
