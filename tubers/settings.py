@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-nr)um#!kmek0s7ye@gv8pio7%bytv^a316p)r&d^2#_@@tpk4-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['youtubers-social-platform.herokuapp.com','127.0.0.1:8000']
+ALLOWED_HOSTS = ['youtubers-social-platform.herokuapp.com','127.0.0.1:8000','*']
 
 LOGIN_REDIRECT_URL='dashboard'
 
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'accounts.apps.AccountsConfig',
     'youtubers.apps.YoutubersConfig',
     'webpages.apps.WebpagesConfig',
+    'hiretubers.apps.HiretubersConfig',
     'djangocms_admin_style',
     'django.contrib.admin',
     'django.contrib.auth',
